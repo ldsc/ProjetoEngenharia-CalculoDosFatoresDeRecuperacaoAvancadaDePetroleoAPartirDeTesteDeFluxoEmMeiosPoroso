@@ -1,0 +1,877 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Especificação} 
+\backslash
+rhead{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Especificação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Especificação
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Especificação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo do projeto de engenharia, apresenta-se a especificação do
+ software a ser modelado e desenvolvido para aplicação em testes de recuperação
+ avançada de óleo, um processo altamente visado no setor de petroleo a fim
+ de garantir otimização e eficiência nos métodos adotados.
+ 
+\end_layout
+
+\begin_layout Section
+Especificação do Software – Descrição dos Requisitos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Especificação do Software – Descrição dos Requisitos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Especificação do Software – Descrição dos Requisitos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nesta seção são descritas as principais características, além dos requisitos
+ para a utilização do software desenvolvido.
+\end_layout
+
+\begin_layout Subsection
+Nome do sistema/produto e componentes
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Nome do sistema/produto e componentes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na Tabela 2.1, apresenta-se as características do software:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Características do software 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1-característica-software"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3.1cm">
+<column alignment="left" valignment="middle" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NOME
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software para Cálculo dos Fatores de Recuperação de Óleo para Métodos EOR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COMPONENTES PRINCIPAIS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sistema para cálculo das propriedades do meio poroso e fatores de recuperação
+ total de petróleo a partir de testes de injeção com métodos de recuperação
+ avançada de petroleo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+MISSÃO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Calcular volume poroso e porosidade de amostras de rochas; 
+\end_layout
+
+\begin_layout Plain Layout
+Calcular permeabilidade absoluta de amostras; 
+\end_layout
+
+\begin_layout Plain Layout
+Gerar gráficos dos volumes produzidos durante os testes de injeção; 
+\end_layout
+
+\begin_layout Plain Layout
+Calcular os fatores de recuperação secundária e avançada; 
+\end_layout
+
+\begin_layout Plain Layout
+Calcular o fator de recuperação total.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Especificação 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Especificação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O projeto a ser desenvolvido cosiste de um programa que deverá realizar
+ cálculos de alguns parâmetros de amostras rochosas, como volume poroso
+ e porosidade, além de propriedades do meio poroso, como a permeabilidade
+ absoluta a partir da equação de Darcy.
+ Conforme realização de testes de injeção de fluidos neste meio poroso,
+ será calculado os volumes de fluidos produzidos e os fatores de recuperação
+ de petroleo com métodos avançados.
+ 
+\end_layout
+
+\begin_layout Standard
+Na dinâmica de execução do software, o usuário deverá entrar com os dados
+ da amostra medidos em laboratório, como diâmetro, comprimento, peso da
+ amostra seca, peso da amostra molhada e com os dados em arquivo 
+\shape italic
+ascii
+\shape default
+ com extensão 
+\shape italic
+.txt
+\shape default
+ contendo os volumes de óleo recuperados por minuto.
+ Os cálculos, bem como os gráficos da permeabilidade e volumes produzidos
+ durante os métodos de injeção serão fornecidos ao usuário a partir do terminal.
+ Os dados com as suas respectivas unidades estão listados abaixo:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos à amostra (plug)
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Medidas de diâmetro para cálculo da média - mm;
+\end_layout
+
+\begin_layout Standard
+Medidas de comprimento para cálculo da média - mm;
+\end_layout
+
+\begin_layout Standard
+Peso da amostra seca - g;
+\end_layout
+
+\begin_layout Standard
+Peso da amostra molhada (saturada com água salina) – g; 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos aos fluidos de injeção:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Vazões de injeção para medida da permeabilidade – mL/min;
+\end_layout
+
+\begin_layout Standard
+Pressões adquiridas para medida da permeabilidade – psia; 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos ao teste de injeção:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Vazão de Injeção para teste de recuperação – mL/min;
+\end_layout
+
+\begin_layout Standard
+Viscosidade do fluido de inejeção – cP.
+ Tempos de medidas – min.;
+\end_layout
+
+\begin_layout Standard
+Volumes produzidos – mL.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Requisitos funcionais 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Requisitos funcionais
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos funcionais:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+RF-01: O usuário deverá ser capaz de incluir valores de parâmetros e propriedade
+s das rochas, fluidos e testes laboratoriais para execução dos cálculos;
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+RF-02: O programa deverá permitir o carregamento de dados a partir de um
+ arquivo de disco criado pelo usuário;
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+RF-03: Os resultados deverão ser exportados como textos e/ou gráficos.
+\end_layout
+
+\begin_layout Subsection
+Requisitos não funcionais 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Requisitos não funcionais
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos não funcionais.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+RNF-01: Os cálculos devem ser feitos utilizando-se formulações matemáticas
+ conhecidas da literatura;
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+RNF-02: O programa deverá ser multi-plataforma, podendo ser executado em
+ Windows, GNU/Linux, Mac, OsX.
+\end_layout
+
+\begin_layout Section
+Casos de uso do software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Casos de uso do software
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.2 Casos de uso do software"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Tabela 2.2 apresenta um caso de uso do sistema, bem como os diagramas de
+ casos de uso.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Caso de uso geral do sistema 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:1-característica-software-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3.1cm">
+<column alignment="left" valignment="middle" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do caso de uso:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cálculo dos Fatores de Recuperação de Óleo para Métodos EOR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resumo/Descrição:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cálculo das propriedades do meio poroso e fatores de recuperação total de
+ petroleo a partir de testes de injeção com métodos de recuperação avançada
+ de petroleo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+Etapas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Inserir dados de entrada 
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Calcular permeabilidade absoluta da amostra 
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Inserir dados em formato .txt 
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Plotar os gráficos de volumes produzidos 
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Calcular fator de recuperação secundário 
+\end_layout
+
+\begin_layout Plain Layout
+6.
+ Calcular fator de recuperação avançado 
+\end_layout
+
+\begin_layout Plain Layout
+7.
+ Calcular fator de recuperação total e apresentar os valores calculados
+ no terminal.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenários Alternativos:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inserir valores negativos ou incompatíveis com a ordem de grandeza do problema.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diagrama de casos de uso geral
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagrama de casos de uso geral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso geral da Figura 1 exibe o usuário interagindo
+ com o software para obter os fatores de recuperação de petroleo a partir
+ do método EOR.
+ Neste caso de uso geral, o usuário insere os dados de entrada, calcula
+ a permeabilidade absoluta da amostra, insere um arquivo .txt para possibilitar
+ o plot dos gráficos de produção de água e óleo, plota os gráficos e insere
+ os dados dos volumes produzidos para cálculo das frações de recuperação.
+ O usuário pode então fazer a análise dos resultados obtidos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura1.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso - Caso de uso geral
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:10-diagrama-caso-de-uso"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diagrama de casos de uso específico
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagrama de casos de uso específico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso específico da Figura 2 é um detalhamento do caso
+ de uso para calcular os fatores de recuperação, ele mostra a interação
+ usuário com o software para calcular a recuperação de óleo no meio poroso,
+ usando o método EOR.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura2.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso - Caso de uso específico: calcular fatores de recuperaçã
+o
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:10-diagrama-caso-de-uso-especifico"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

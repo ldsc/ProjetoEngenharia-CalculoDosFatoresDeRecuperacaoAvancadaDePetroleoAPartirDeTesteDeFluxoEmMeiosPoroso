@@ -1,0 +1,515 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master ../../ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/lyx/DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Capa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE: 
+\begin_inset Newline newline
+\end_inset
+
+CÁLCULO DOS FATORES DE RECUPERAÇÃO AVANÇADA DE PETROLEO À PARTIR DE TESTES
+ DE FLUXO EM MEIO POROSO
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+LAÍSA RIGUETI BRASIL - Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o valor de 4cm pode ser alterado, para que a distribuição fique mais uniforme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+JULHO - 2019
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{LAÍSA RIGUETI BRASIL} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente trabalho de engenharia, desenvolve-se um projeto computacional
+ em linguagem orientada a objeto C++ que tem como principal objetivo o gerenciam
+ento de informações e realização de cálculos para o monitoramento de frações
+ de recuperação de óleo a partir de um experimento laboratorial que realiza
+ testes de injeção com métodos de recuperação avançada de petroleo.
+\end_layout
+
+\begin_layout Standard
+Levando em consideração que no Laboratório de Engenharia e Exploração de
+ Protróleo (LENEP) da Universidade Estadual do Norte Fluminense (UENF) não
+ há softwares para realização dos cálculos que quanticam as propriedades
+ envolvidas neste tipo de experimento, o presente projeto possibilita os
+ cálculos das mesmas, podendo, portanto, ser usado para fins acadêmicos.
+\end_layout
+
+\begin_layout Section
+Escopo do Problema
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Escopo do Problema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A recuperação avançada ou EOR (
+\shape italic
+Enhanced Oil Recovery
+\shape default
+) é o conjunto de métodos utilizados atualmente para produzir o óleo remanescent
+e, em sua maioria, após os processos de recuperação primária e secundária.
+ Na literatura, encontram-se referenciados alguns dos projetos de grande
+ escala que utilizaram sistemas químicos como método de injeção.
+ Os reservatórios de óleo em todo o mundo representam sistemas biológicos
+ muito complicados para os quais as simulações laboratoriais de atividades
+ microbianas se tornam desafiadoras como uma parte essencial e fundamental
+ para o desenvolvimento em campo.
+ Neste contexto, o projeto focará nos processos de recuperação avançada
+ de petróleo melhorada microbiologicamente (
+\shape italic
+Microbial Enhanced Oil Recovery, MEOR
+\shape default
+) a partir das propriedades dos biossurfactantes.
+\end_layout
+
+\begin_layout Standard
+O conhecimento das propriedades das rochas e fluidos é essencial para o
+ desenvolvimento de qualquer tecnologia para aumentar o fator de recuperação
+ do petróleo, como por exemplo, as definições de porosidade, molhabilidade,
+ permeabilidade, razão de mobilidade, tensão interfacial, tensoativos, fator
+ de recuperação, dentre outros.
+ Desta forma, uma das finalidades do programa será calcular à partir das
+ propriedades físicas e químicas dos fluidos de injeção e das amostras de
+ rochas, a permeabilidade absoluta e o volume poroso.
+ Além disso, o usuário poderá incluir as informações dos volumes produzidos
+ através dos experimentos de fluxo em meios porosos para avaliar o potencial
+ de recuperação com o método adotado.
+\end_layout
+
+\begin_layout Standard
+O programa buscará auxiliar o pesquisador/usuário com a compilação dos dados,
+ otimizando tempo, minimizando possíveis erros de cálculos das frações recuperad
+as e mantendo um software otimizado que poderá ser utilizado para diferentes
+ tipos de fluidos, rochas e métodos de recuperação.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste trabalho são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Esse projeto tem como objetivo utilizar a programação para facilitar as
+ pesquisas laboratoriais de novos alunos pesquisadores do setor de Engenharia
+ de Petróleo, criando um software capaz de automatizar os cálculos envolvidos
+ no projeto.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Calcular a permeabilidade absoluta de amostras rochosas;
+\end_layout
+
+\begin_layout Itemize
+Obter gráfico da permeabilidade absoluta da amostra (
+\shape italic
+plugs
+\shape default
+);
+\end_layout
+
+\begin_layout Itemize
+Calcular o volume poroso de amostras rochosas; 
+\end_layout
+
+\begin_layout Itemize
+Calcular as frações de recuperação de óleo a partir do método utilizado:
+ Secundário e/ou Avançado;
+\end_layout
+
+\begin_layout Itemize
+Possibilitar a inclusão de informações de novos fluidos e amostras (
+\shape italic
+plugs
+\shape default
+);
+\end_layout
+
+\begin_layout Itemize
+Obter gráficos com as curvas de produção de água e de óleo através da recuperaça
+o secundária e avançada a partir da entrada de dados pelo usuário (volumes
+ produzidos por minuto);
+\end_layout
+
+\begin_layout Itemize
+Obter as saturações iniciais e finais dos fluidos injetados no meio poroso;
+\end_layout
+
+\begin_layout Itemize
+Obter o fator de recuperação total de óleo através dos métodos de recuperação
+ utilizados.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,595 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Projeto
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Projeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Projeto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Projeto}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo do projeto de engenharia serão apresentadas questões associadas
+ ao projeto do sistema, incluindo protocolos, recursos, plataformas suportadas,
+ inplicações nos diagramas feitos anteriormente, diagramas de componentes
+ e implantação.
+ Avalia-se aqui algumas características do 
+\shape italic
+software
+\shape default
+ como:
+\end_layout
+
+\begin_layout Enumerate
+Protocolos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O programa permite salvar imagens em disco no formato .png;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Plataformas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O programa é multiplataforma, o que permite executá-lo em GNU/Linux, mas
+ será desenvolvido na plataforma Windows;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bibliotecas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Biblioteca padrão C++;
+\end_layout
+
+\begin_layout Itemize
+Programa externo Gnuplot;
+\end_layout
+
+\begin_layout Itemize
+Programa externo Armadillo
+\end_layout
+
+\begin_layout Standard
+3.1.
+ Uso da Biblioteca Armadillo
+\end_layout
+
+\begin_layout Standard
+Armadillo é uma biblioteca de software de álgebra linear para a linguagem
+ de programação C ++.
+ O objetivo é fornecer cálculos de base eficientes e simplificados, enquanto
+ ao mesmo tempo tem uma interface simples e fácil de usar.
+ Neste projeto, a biblioteca foi utilizada para o cálculo da regressão linear
+ a fim de determinar a permeabilidade absoluta da amosta de rocha.
+ Abaixo, segue indicações de como instalar a biblioteca para utilização
+ no 
+\shape italic
+Windows
+\shape default
+ e 
+\shape italic
+GNU/Linux.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No Windows: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Entrar no site
+\shape italic
+ http://arma.sourceforge.net/download.html 
+\shape default
+e fazer o
+\shape italic
+ download 
+\shape default
+da versão mais atualizada;
+\end_layout
+
+\begin_layout Enumerate
+Instalar os pacotes associados:
+\shape italic
+ dnf install cmake openblas-devel lapack-devel arpack-devel SuperLU-devel;
+\end_layout
+
+\begin_layout Enumerate
+Entrar no Ambiente de Desenvolvimento Integrado;
+\end_layout
+
+\begin_layout Enumerate
+Abrir o programa no
+\shape italic
+ Visual Studio 2019
+\shape default
+;
+\end_layout
+
+\begin_layout Enumerate
+Na aba 
+\begin_inset Quotes eld
+\end_inset
+
+Ferramentas
+\begin_inset Quotes erd
+\end_inset
+
+, selecionar 
+\begin_inset Quotes eld
+\end_inset
+
+Gerenciador de Pacotes NuGet
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Selecionar 
+\begin_inset Quotes eld
+\end_inset
+
+Gerenciador Pacotes do NuGet para a Solução...
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Em 
+\begin_inset Quotes eld
+\end_inset
+
+Procurar
+\begin_inset Quotes erd
+\end_inset
+
+ digite o nome da biblioteca 
+\begin_inset Quotes eld
+\end_inset
+
+Armadillo
+\begin_inset Quotes erd
+\end_inset
+
+, selecione e instale.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No GNU/Linux:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Entrar no site
+\shape italic
+ http://arma.sourceforge.net/download.html 
+\shape default
+e fazer o
+\shape italic
+ download 
+\shape default
+da versão mais atualizada;
+\end_layout
+
+\begin_layout Enumerate
+Instalar os pacotes associados:
+\shape italic
+ dnf install cmake openblas-devel lapack-devel arpack-devel SuperLU-devel;
+\end_layout
+
+\begin_layout Enumerate
+Baixar o arquivo do Armadillo:
+\shape italic
+ http://sourceforge.net/projects/arma/files/armadillo-9.600.4.tar.xz;
+\end_layout
+
+\begin_layout Enumerate
+Descompactar;
+\end_layout
+
+\begin_layout Enumerate
+Entrar no diretório criado e configurar para a máquina que será utilizada
+ 
+\shape italic
+(./configure)
+\shape default
+;
+\end_layout
+
+\begin_layout Enumerate
+- Compilar: Ler
+\shape italic
+ http://arma.sourceforge.net/faq.html e
+\shape default
+ adicionar a flag 
+\shape italic
+-larmadillo
+\shape default
+ para fazer a ligação do programa com a biblioteca do Armadillo;
+\end_layout
+
+\begin_layout Enumerate
+Instalar como root para todos os usuários da máquina 
+\shape italic
+(make install);
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Ambiente de desenvolvimento
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+As listagens foram desenvolvidas com o software Microsoft Visual Studio,
+ na plataforma Windows;
+\end_layout
+
+\begin_layout Itemize
+Foi utilizado um arquivo .txt com os dados do esperimento realizado em laboratóri
+o nomeado 
+\begin_inset Quotes eld
+\end_inset
+
+experimento.recuperacao.txt
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Exemplo com o modelo da planilha é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquivo de entrada de dados .txt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Figura5.1.PNG
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Implantação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arquivo de entrada de dados .txt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Projeto orientado a objeto - POO
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Projeto orientado a objeto - POO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O projeto orientado a objeto é a etapa posterior ao projeto do sistema.
+ Baseia-se na análise, mas considera as decisões do projeto do sistema.
+ Acrescenta a análise desenvolvida e as características da plataforma escolhida
+ (hardware, sistema operacional e linguagem de software).
+ Passa pelo maior detalhamento do funcionamento do software, acrescentando
+ atributos e métodos que envolvem a solução de problemas específicos não
+ identificados durante a análise.
+ Além disso, envolve a otimização da estrutura de dados e dos algoritmos,
+ a minimização do tempo de execução, de memória e de custos.
+ Como o projeto não alterou os diagramas apresentados na análise orientada
+ a objeto, não houve necessidade de descrever os ítens abaixo relacionados:
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto no modelo estrutural;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto no modelo dinâmico;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto nos atributos;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto nos métodos;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto nas heranças;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto nas associações;
+\end_layout
+
+\begin_layout Itemize
+Efeitos do projeto nas otimizações.
+\end_layout
+
+\begin_layout Section
+Diagrama de implantação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagrama de implantação
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Diagrama de implantação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O diagrama de implantação é um diagrama de alto nível que inclui relações
+ entre o sistema e o hardware e que se preocupa com os aspectos da arquitetura
+ computacional escolhida.
+ Seu enfoque é o hardware, a configuração dos nós em tempo de execução.
+ Este deve incluir os elementos necessários para que o sistema seja colocado
+ em funcionamento: computador, periféricos, processadores, dispositivos,
+ nós, relacionamentos de dependência, associação, componentes, subsistemas,
+ restrições e notas.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama de Implantação"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o diagrama de implantação utilizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura12.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Implantação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama de Implantação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

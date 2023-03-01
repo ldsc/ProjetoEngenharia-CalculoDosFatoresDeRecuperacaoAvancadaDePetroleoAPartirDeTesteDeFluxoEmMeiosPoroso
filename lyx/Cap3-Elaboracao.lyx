@@ -1,0 +1,1976 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master Monografia-Dissertacao-Tese-master.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Elaboração} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Depois da definição dos objetivos, da especificação do software e da montagem
+ dos primeiros diagramas de caso de uso, a etapa do projeto de engenharia
+ envolve a identificação e o estudo dos conceitos relacionados ao sistema
+ a ser desenvolvido, isto é, a análise de domínio e a identificação de pacotes.
+ Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
+ iniciais de forma a desenvolver um sistema útil e adequado, que atenda
+ às necessidades do usuário além de permitir seu reuso e futura extensão.
+ 
+\end_layout
+
+\begin_layout Section
+Análise de Domínio
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Análise de Domínio
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Análise de Domínio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O programa que será desenvolvido está relacionado a área da engenharia de
+ reservatório, na qual utiliza-se métodos de recuperação avançada para produção
+ de óleo remanescente.
+ 
+\end_layout
+
+\begin_layout Standard
+Desde o início das atividades da indústria de petróleo e gás, a produção
+ de hidrocarbonetos foi baseada na manutenção da energia que ocasionalmente
+ provinha do próprio reservatório a ser explorado.
+ Essa quantidade de energia é denominada “energia primária”, sendo sua grandeza
+ determinada pelo volume e pela natureza dos fluidos existentes na acumulação,
+ bem como pelos níveis de pressão e de temperatura presentes no reservatório.
+ As principais forças motrizes neste período são o gás em solução, o aporte
+ de aquífero, a expansão da capa de gás e segregação gravitacional 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ Devido às forças viscosas e capilares presentes no meio poroso, ocorre
+ uma dissipação da energia primária no processo de produção 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thomas2001"
+literal "false"
+
+\end_inset
+
+ refletindo no decréscimo da pressão do reservatório durante sua vida produtiva,
+ e consequente, na redução da produtividade dos poços.
+ A eficiência da recuperação primária é geralmente baixa (~15%) e dependendo
+ do mecanismo de produção, das características do reservatório e das propriedade
+s dos fluidos acumulados, tal eficiência pode inclusive ser nula 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mothe2006"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Com a necessidade do aumento da produção de óleo e devido à rápida queda
+ de pressão do reservatório, surgiu a necessidade de se utilizar métodos
+ artificiais capazes de suplementar esta energia, conhecidos como métodos
+ de recuperação secundária 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ A injeção de fluidos no reservatório tem como objetivo fornecer pressões
+ necessárias para deslocar o óleo da rocha reservatório e ocupar o espaço
+ deixado pelo fluido produzido.
+ Os métodos de recuperação secundária conseguem elevar a recuperação média
+ de 15% para 30%.
+ Porém, existe ainda uma parcela do “
+\shape italic
+Original Oil In-Place
+\shape default
+” (OOIP) - volume que se refere àquele estimado antes de iniciada a produção
+ do reservatório - que permanece retida 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bruce1947"
+literal "false"
+
+\end_inset
+
+.
+ Os métodos mais comuns e mais baratos são a injeção de água e a reinjeção
+ de gás de produção 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mothe2006"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Desta forma, cerca de 70% do óleo permanece no reservatório, sendo que sua
+ curva de produção continua a declinar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carrero2007"
+literal "false"
+
+\end_inset
+
+.
+ Isso se deve principalmente à alta viscosidade do óleo residual e à alta
+ tensão interfacial entre o hidrocarboneto e a fase aquosa, que resultam
+ em altas forças capilares que retém o óleo em pequenos poros na rocha 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lazar2007"
+literal "false"
+
+\end_inset
+
+.
+ Como resultado, para recuperar o óleo residual após a aplicação dos métodos
+ convencionais, é indicado a adoção de um método de recuperação avançada
+ de petróleo.
+\end_layout
+
+\begin_layout Standard
+Nas últimas décadas, a produção primária e os métodos de recuperação secundária
+ passaram a ser classificados como métodos convencionais de recuperação,
+ enquanto que os métodos terciários passaram a ser denominados como métodos
+ especiais de recuperação ou métodos de Recuperação Avançada conhecidos
+ como EOR (
+\shape italic
+Enhanced Oil Recovery
+\shape default
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ali1996,Thomas2001,Rosa2006,Muggeridge2014"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Os métodos de recuperação terciária são mais indicados para a recuperação
+ de campos maduros, pois buscam recuperar reservatórios que apresentam óleos
+ com alta viscosidade, elevadas tensões interfaciais, ou que já atingiram
+ ou estão perto de atingir a saturação de óleo residual.
+ Neste cenário, a aplicação dos métodos convencionais de recuperação secundária
+ não é suficiente.
+\end_layout
+
+\begin_layout Standard
+Os principais métodos de EOR incluem: i) métodos térmicos, como injeção
+ de vapor, combustão in situ e injeção de água quente; (ii) métodos químicos
+ com a injeção de produtos químicos, como injeção de polímero, de surfactante,
+ injeção alcalina, injeção de microrganismos (
+\shape italic
+Microbial Enhanced Oil Recovery, MEOR
+\shape default
+) e (iii) métodos miscíveis, como injeção de CO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ e hidrocarbonetos miscíveis.
+ 
+\end_layout
+
+\begin_layout Standard
+A eficiência de um cenário de EOR pode ser variável para diferentes reservatório
+s, dependendo das condições do reservatório e do tipo de óleo.
+ Como resultado, para obter o máximo benefício de um método EOR, as condições
+ do óleo não recuperado, bem como os mecanismos de produção do óleo por
+ meio desses processos, devem ser bem compreendidos e estudados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venuto1989,Rosa2006,Muggeridge2014"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Com o declínio de reservas, os métodos de recuperação avançada (EOR) têm
+ se tornado um tema importante na indústria petrolífera.
+ Os objetivos gerais destes métodos são de impulsionar o deslocamento de
+ óleo através do reservatório devido alteração das propriedades físicas
+ e químicas nas interações rocha-fluidos contidos no meio poroso 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lake1989"
+literal "false"
+
+\end_inset
+
+.
+ O objetivo principal visa aumentar o fator de recuperação de óleo, ou seja,
+ recuperar a maior fração do OOIP em relação aos métodos convencionais 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Green1998"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A partir dos inúmeros estudos feitos na aplicação do método, a proporção
+ das melhorias na recuperação do óleo se mostrou influenciada por vários
+ fatores, incluindo características individuais do reservatório como litologia,
+ natureza dos arenitos, porosidade, permeabilidade, temperatura do reservatório,
+ grau API do petróleo bruto, entre outros.
+ Além das condições do fundo do poço e da natureza das formações, composição
+ química e concentração da injeção, o tempo de adaptação e o tempo de aplicação
+ constituem os principais fatores que governam a EOR.
+ 
+\end_layout
+
+\begin_layout Standard
+Perspectivas da engenharia de reservatório, com foco em questões como o
+ aumento de escala dos resultados de laboratório para projetos de campo
+ e operações fornecem uma estrutura consistente para comparar os processos
+ EOR para escolha do método adequado.
+ Isso justifica a lógica por trás dos testes de campo em escala piloto que
+ são realizados após o desenvolvimento bem-sucedido dos processos EOR através
+ de testes em laboratório 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sen2008"
+literal "false"
+
+\end_inset
+
+.
+ Uma análise de dados de uma base de dados de informações e cálculos concisos
+ empregando os métodos EOR resultam na avaliação da eficiência técnica e
+ econômica dos processos, além de fornecer uma fonte de informação útil
+ para prever a resposta ao tratamento em qualquer reservatório 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Portwood1995"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma das técnicas é o método de recuperação microbiológica ou MEOR (
+\shape italic
+Microbial Enhanced Oil Recovery
+\shape default
+) no qual se utilizam diferentes estratégias de injeção de metabólitos produzido
+s por microrganismos, dentre eles, que atuem como biossurfactantes, mobilizando
+ o óleo trapeado em reservatórios e aumentando a eficiência de varrido por
+ meio da redução da viscosidade e da tensão superficial óleo/rocha.
+ 
+\end_layout
+
+\begin_layout Standard
+Neste projeto, o objetivo dos resultados do software será a avaliação da
+ eficiência de um biossurfactante produzido pela bactéria Bacillus safensis
+ em processo de recuperação avançada de petróleo.
+ Para isso, foram realizados testes de fluxo em meio poroso saturado com
+ solução salina e óleo sintético.
+ Injetou-se uma solução salina de 30.000 ppm como método de recuperação secundári
+a e, após atingir a saturação de óleo residual, injetou-se a solução do
+ biossurfactante como método MEOR à uma vazão de 0,5 mL/min.
+ Os fatores de recuperação serão adquiridos à partir da entrada dos dados
+ dos volumes produzidos por minuto e retorno dos cálculos.
+ 
+\end_layout
+
+\begin_layout Section
+Conceitos Teóricos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Conceitos Teóricos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O conhecimento das propriedades das rochas e fluidos é essencial para o
+ desenvolvimento de qualquer metodologia para aumentar o fator de recuperação
+ do petróleo.
+ Assim, será mostrado definições de porosidade absoluta e relativa, molhabilidad
+e, permeabilidade absoluta, fator de recuperação, entre outros.
+ 
+\end_layout
+
+\begin_layout Subsection
+Conceitos Fundamentais e Propriedades das Rochas e Fluidos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Conceitos Fundamentais e Propriedades das Rochas e Fluidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O entendimento de conceitos fundamentais relativo a algumas propriedades
+ das rochas e dos fluidos é de fundamental importância no desenvolvimento
+ de um trabalho com aplicação na engenharia de reservatórios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Porosidade
+\end_layout
+
+\begin_layout Standard
+A porosidade de uma rocha é definida como a razão entre o volume poroso,
+ capaz de armazenar fluidos, e o volume total da rocha, que é dado pela
+ soma do volume poroso e do volume da parte sólida da rocha.
+ A porosidade mede o volume dos espaços vazios em um meio poroso, independente
+ de estarem ou não interligados.
+ Portanto, a porosidade é um parâmetro petrofísico de grande importância
+ visto que se consegue medir a capacidade de armazenagem de fluidos em um
+ corpo poroso 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Assim, a porosidade (
+\begin_inset Formula $\phi$
+\end_inset
+
+), expresso em porcentagem, pode ser definida como a razão entre o volume
+ poroso (V
+\begin_inset Formula $_{p}$
+\end_inset
+
+) e o volume total (V
+\begin_inset Formula $_{t}$
+\end_inset
+
+) da amostra (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), onde o volume total é dado pela soma do espaço poroso e da fase sólida
+ (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volumetotal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{V_{p}}{V_{t}}\label{eq:porosidade}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{total}=V_{p}+V_{sólida}\label{eq:volumetotal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A porosidade pode ser absoluta, quando representar a relação entre o volume
+ total de vazios e o volume total da rocha (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade-absoluta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), ou efetiva quando a relação for entre o volume dos espaços vazios interconect
+ados de uma rocha e o volume total da mesma (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade-efetiva"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ Vale ressaltar que a porosidade efetiva é o parâmetro de maior interesse
+ na engenharia de reservatórios, pois representa o espaço ocupado por fluidos
+ que podem ser deslocados através do meio poroso, ou seja, representa o
+ volume máximo de fluidos que pode ser extraído de um meio poroso 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thomas2001"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{V_{pinterconectados}+V_{pisolados}}{V_{t}}\label{eq:porosidade-absoluta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{V_{pinterconectados}}{V_{t}}\label{eq:porosidade-efetiva}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Molhabilidade
+\end_layout
+
+\begin_layout Standard
+O deslocamento de petróleo por meio dos poros da rocha reservatório também
+ é influenciado por outros parâmetros petrofísicos como a molhabilidade,
+ a qual pode ser definida como a capacidade de um fluido de se espalhar
+ em uma superfície sólida na presença de outros fluidos, ou seja, é a tendência
+ da superfície de ter mais afinidade por um fluido em detrimento de outro,
+ também presente no meio poroso.
+ Isto significa que em um fluxo multifásico, um fluido tem mais afinidade
+ com o meio poroso que outros fluidos presentes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006,Dandekar2013"
+literal "false"
+
+\end_inset
+
+.
+ Desta forma, a molhabilidade quantifica a afinidade que a superfície da
+ rocha apresenta para cada fluido na presença de outros, estando relacionada
+ com as forças intermoleculares que atuam entre a superfície e as moléculas
+ dos líquidos presentes.
+ Em reservatórios de petróleo, encontram-se basicamente duas fases líquidas,
+ formadas pelo óleo e a água 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A molhabilidade de uma rocha-reservatório varia de acordo com a interação
+ dos fluidos com a superfície da rocha reservatório, podendo ser mais fortemente
+ molhável ao óleo ou à água 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006,Agbalaka2008"
+literal "false"
+
+\end_inset
+
+.
+ Além disso, a molhabilidade pode variar a partir do contato óleo-água dependend
+o da saturação de água, ou devido às diferenças na composição da rocha ou
+ mineralogia, sendo amplamente reconhecida como uma importante parte da
+ descrição do reservatório 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Buckley1999"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A molhabilidade tem impacto fundamental nas características petrofísicas
+ das rochas e uma das formas de se considerar os impactos deste parâmetro
+ na produção e recuperação de petróleo são através das curvas de permeabilidade
+ relativa 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Donaldson1985"
+literal "false"
+
+\end_inset
+
+.
+ Donaldson e Thomas (1971), em análises de laboratórios, verificaram um
+ aumento da permeabilidade relativa à água e uma diminuição da permeabilidade
+ relativa ao óleo quando a molhabilidade ao óleo era mais acentuada.
+ Isto mostra que quanto mais o meio poroso for molhável ao óleo, maior a
+ saturação de água posicionada no centro dos poros competindo com o óleo
+ nos caminhos mais permeáveis, reduzindo a permeabilidade relativa ao óleo,
+ e aumentando a permeabilidade relativa à água.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Permeabilidade
+\end_layout
+
+\begin_layout Standard
+A permeabilidade é uma das características petrofísicas mais importantes
+ de um reservatório, sendo a capacidade da rocha de permitir o escoamento
+ de fluidos.
+ Uma rocha pode ter alta porosidade e apresentar baixa permeabilidade, caso
+ os poros não sejam bem conectados, ou seja, para que o reservatório seja
+ produtivo não basta um alto valor de porosidade, a rocha deve possuir a
+ capacidade de permitir o deslocamento de fluidos através dela 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ Este parâmetro é um dos que tem mais influência na determinação da capacidade
+ de produção de hidrocarbonetos acumulados.
+ A permeabilidade (k) é uma propriedade dinâmica, definida como a capacidade
+ de um dado meio poroso se deixar atravessar por um fluido 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ Ela é uma função da posição e pressão, e varia fortemente com o tamanho
+ dos poros e sua distribuição em determinado local 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lake1989"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+O conceito de permeabilidade aparece na lei que governa o deslocamento dos
+ fluidos através de meios porosos, conhecida como a Lei de Darcy, sendo
+ medida em milidarcy (md).
+ Existem dois tipos de permeabilidades, a permeabilidade absoluta, quando
+ o reservatório está saturado com um único fluido, e a permeabilidade efetiva,
+ quando existem dois ou mais fluidos coexistindo dentro de uma mesma rocha
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Albuquerque2007,Dandekar2013"
+literal "false"
+
+\end_inset
+
+.
+ O desenvolvimento da expressão que permite encontrar a permeabilidade absoluta
+ de um meio poroso é utilizado até os dias atuais na indústria do petróleo.
+ O experimento original de Darcy investigou o fluxo de água através da areia
+ e concluiu que um fluxo linear com vazão de injeção (q) é função da condutivida
+de hidráulica (k), da área da seção transversal (A), do diferencial de pressão
+ da entrada para a saída (∆p) e do comprimento do meio poroso (L), conforme
+ mostra a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lei-darcy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006,Lake1989"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q=\frac{\kappa A\triangle P}{\mu L}\label{eq:lei-darcy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A permeabilidade absoluta pode ser calculada isolando k na equação de Darcy
+ conforme Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:permeabilidade"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\kappa=\frac{\mu Lq}{A\triangle P}\label{eq:permeabilidade}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo: 
+\end_layout
+
+\begin_layout Standard
+K = Permeabilidade 
+\end_layout
+
+\begin_layout Standard
+A = Área da seção transversal 
+\end_layout
+
+\begin_layout Standard
+μ = Viscosidade 
+\end_layout
+
+\begin_layout Standard
+L = Comprimento do meio poroso 
+\end_layout
+
+\begin_layout Standard
+Desta forma, durante um fluxo, se todas as variáveis são conhecidas, menos
+ a permeabilidade, torna-se possível encontrá-la.
+ A forma para a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:permeabilidade"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é utilizada para um fluxo linear.
+ Em poços, com fluxo radial, modifica-se a geometria para definir a permeabilida
+de levando em consideração o raio externo do reservatório, o raio do poço,
+ a pressão externa do reservatório, e a pressão medida no poço em uma determinad
+a altura do reservatório 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A permeabilidade efetiva (
+\begin_inset Formula $k_{e}$
+\end_inset
+
+), quando dois ou mais fluidos saturam o meio poroso 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+, sempre apresentará valores menores do que o valor da permeabilidade absoluta
+ da rocha.
+ O cálculo das permeabilidades efetivas à água e ao óleo (
+\begin_inset Formula $k_{w}$
+\end_inset
+
+e 
+\begin_inset Formula $k_{o}$
+\end_inset
+
+) também pode ser realizado usando a Lei de Darcy conforme Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:efetiva-agua"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:efetiva-oleo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\kappa_{w}=\frac{\mu_{w}Lq_{w}}{A\triangle P}\label{eq:efetiva-agua}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\kappa_{o}=\frac{\mu_{o}Lq_{o}}{A\triangle P}\label{eq:efetiva-oleo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A razão entre a permeabilidade efetiva de determinado fluido no meio poroso
+ e a permeabilidade absoluta é denominada permeabilidade relativa (
+\begin_inset Formula $k_{r}$
+\end_inset
+
+), a qual pode ser representada pelas Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relativa-agua"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relativa-oleo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para um sistema bifásico óleo-água.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\kappa_{rw}=\frac{\kappa_{w}}{\kappa}\label{eq:relativa-agua}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\kappa_{ro}=\frac{\kappa_{o}}{\kappa}\label{eq:relativa-oleo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este parâmetro sofre efeitos da variação da saturação dos fluidos, da molhabilid
+ade da rocha, da estrutura dos poros da rocha, da tensão de confinamento,
+ do teor de argila da rocha, da migração de finos, da temperatura, além
+ das variações de tensão interfacial, viscosidade e velocidade do fluxo
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dandekar2013"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+O aumento da saturação de um fluido molhante no meio poroso em relação a
+ outro fluido chama-se de embebição, e, por outro lado, quando existe uma
+ redução de saturação do fluido que molha preferencialmente a rocha em relação
+ a outro fluido, tem-se uma drenagem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Donaldson1985"
+literal "false"
+
+\end_inset
+
+.
+ Assim, no processo de embebição, é necessário que haja uma determinada
+ saturação da fase molhante no inicio do fluxo, chamada saturação de água
+ conata ou saturação irredutível (
+\begin_inset Formula $S_{wi}$
+\end_inset
+
+).
+ Da mesma forma ocorre no processo de drenagem, e essa saturação é denominada
+ saturação de óleo residual (
+\begin_inset Formula $S_{or}$
+\end_inset
+
+).
+ A saturação da fase não molhante atinge seu valor máximo a saturações menores
+ que 100%, o que indica que nem todo o meio poroso interligado irá contribuir
+ ao fluxo desta fase 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nunez2011"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Fator de recuperação de óleo
+\end_layout
+
+\begin_layout Standard
+O fator de recuperação de óleo, FR, é a razão entre o volume de óleo produzido
+ do reservatório (
+\begin_inset Formula $V_{ÓleoProduzido}$
+\end_inset
+
+) e o volume total de óleo dentro do reservatório (
+\begin_inset Formula $V_{ÓleoTotal}$
+\end_inset
+
+), conforme Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fator-recuperaçao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Os valores de FR variam de 0 a 1, ou podem ser expressos em porcentagem
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rosa2006"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR=\frac{V_{ÓleoProduzido}}{V_{ÓleoTotal}}\label{eq:fator-recuperaçao}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Teste Laboratorial para utilização do Software
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Teste Laboratorial para utilização do Software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste tópico são apresentados os procedimentos experimentais adotados para
+ caracterizar o biossurfactante e realizar o teste de recuperação avançada
+ por meio da injeção de biossurfactante a fim de verificar a recuperação
+ adicional de óleo pelo uso do método 
+\shape italic
+MEOR
+\shape default
+.
+ O fluxograma da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fluxograma-experimental"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta o protocolo experimental adotado, o qual serviu como base para
+ criação das classes do programa.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Medidas das viscosidades dos fluidos de injeção
+\end_layout
+
+\begin_layout Standard
+As viscosidades do óleo, solução salina e biossurfactante foram aferidas
+ no viscosímetro Fann Viscosimeter Model 35 A, que apresenta acurácia de
+ ±0,5 cP.
+ 
+\end_layout
+
+\begin_layout Standard
+O óleo sintético utilizado para o teste foi uma mistura de óleo cru (Bacia
+ de Santos) com n-hexano (50/50).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Seleção e caracterização da amostra de rocha 
+\end_layout
+
+\begin_layout Standard
+Utilizou-se uma amostra de arenito Berea (nomeado como BEREA) (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:plug-berea"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) em formato cilíndrico (plug).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura4.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustração do plug de arenito Berea utilizado no teste de recuperação
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:plug-berea"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O plug foi seco em estufa e submetido a vácuo para remoção do ar.
+ O primeiro passo foi inferir as medidas de comprimento e diâmetro, onde
+ realizou-se três medidas utilizando-se um paquímetro com precisão de ±0,01
+ mm.
+ O resultado utilizado foi a média dos três valores encontrados, a fim de
+ minimizar a margem de erro.
+ 
+\end_layout
+
+\begin_layout Standard
+Após aferida a dimensão do plug, ele foi transferido para uma estufa onde
+ permaneceu durante 24 horas, com temperatura constante de 60 ºC (padrão
+ utilizado em laboraório para secagem da amostra), com o objetivo de assegurar
+ que toda a umidade ou possível água residual evaporasse.
+ 
+\end_layout
+
+\begin_layout Standard
+Após a etapa de secagem o plug foi pesado com uma balança de precisão milesimal
+ Adventure OHAUS.
+ Aferido o peso, o plug foi colocado em um becker, onde ficou totalmente
+ imerso em solução salina (30.000 ppm de NaCl) para etapa de saturação.
+ Nesta etapa, utilizou-se uma bomba à vácuo BUCHI Vac V-500 acoplada a um
+ dessecador com secadora, durante 4 horas, mantendo uma pressão de 2 mBar.
+ Terminado o tempo para a saturação completa do testemunho, foi realizada
+ novamente a sua pesagem na balança analítica para viabilizar o cálculo
+ da porosidade.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura3.PNG
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fluxograma experimental
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fluxograma-experimental"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Determinação da Porosidade
+\end_layout
+
+\begin_layout Standard
+Para calcular a porosidade do plug, utilizou-se o método da maturação à
+ vácuo, que consiste em calcular a porosidade a partir da massa do plug
+ seco (
+\begin_inset Formula $m_{seca}$
+\end_inset
+
+) e do plug saturado (
+\begin_inset Formula $m_{sat}$
+\end_inset
+
+) com um líquido (neste trabalho utilizou-se solução salina).
+ Com estes valores aferidos, além do volume total da amostra (
+\begin_inset Formula $Vol_{Total}$
+\end_inset
+
+) e da determinação da densidade do fluido (
+\begin_inset Formula $\rho_{w}$
+\end_inset
+
+), foi possível calcular a porosidade (
+\begin_inset Formula $\phi$
+\end_inset
+
+) através das equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume-total"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade-volume-total"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dandekar2013"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Vol_{total}=\frac{\pi D²L}{4}\label{eq:volume-total}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{m_{sat}-m_{seca}}{Vol_{total}\rho_{w}}\label{eq:porosidade-volume-total}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sistema de injeção de fluidos 
+\end_layout
+
+\begin_layout Standard
+O sistema de injeção é composto de diversos equipamentos, que podem ser
+ vistos na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:core-holder-fluxograma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para a injeção dos fluidos de recuperação em um 
+\shape italic
+core holder
+\shape default
+ (cãmara de injeção) de fluxo direto com destaque para o 
+\shape italic
+core holder
+\shape default
+ hidrostático utilizado no experimento houve a junção dos seguintes equipamentos
+ à câmara: garrafas de transferência utilizadas para transferir o óleo,
+ solução salina e solução com biossurfactante até a linha de injeção do
+ core holder e bomba inteligente HPLC operada com vazão constante (sendo
+ a vazão máxima de trabalho deste equipamento de 50 mL/min).
+ Para o experimento foi utilizado um transdutor de pressão com a função
+ de medir o diferencial de pressão total na rocha e um manômetro para medir
+ a pressão de confinamento aplicada ao sistema.
+ Utilizou-se também linhas de Nylon de 1/8” para conectar a bomba HPLC às
+ garrafas de transferência e às garrafas no 
+\shape italic
+core holder.
+
+\shape default
+ Os core holders do tipo biaxial são definidos como equipamentos que têm
+ pressão radial e axial comum aplicada à amostra de rocha.
+ Estes tipos de equipamentos são rotineiramente utilizados para permeabilidade
+ a gás e a líquido, além de outras experiências de injeção de fluidos no
+ meio poroso, como foi realizado neste trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura5.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustração esquemática do sistema de injeção de fluidos utilizado no experimento
+ de recuperação de petróleo.
+ Em (1),(2) e (3) tem-se as garrafas de transferência onde foram armazenados
+ solução de biossurfactante, óleo e solução salina, respectivamente; (4)
+ transdutor de pressão diferencial com faixa de medida de pressão 0 a 1000
+ psi; (5) célula de confinamento (core holder) do tipo hidrostático; (6)
+ Manômetro do core holder para aferir pressão de confimamento; (7) proveta
+ para armaenamento dos fluidos produzidos e (9) bomba HPLC
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:core-holder-fluxograma"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O procedimento consistiu em posicionar a amostra de rocha saturada no 
+\shape italic
+core colder
+\shape default
+ e os fluidos em suas devidas garrafas de transferência (óleo, biossurfactante
+ e solução salina).
+ Após montagem foi possível injetar os fluidos para saturação da amostra
+ e obtenção das recuperações convencional (injeção de solução salina) e
+ avançada (injeção de solução com biossurfactante).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Determinação da permeabilidade absoluta da amostra 
+\end_layout
+
+\begin_layout Standard
+A variação da pressão, medida através dos transdutores, permite determinar
+ os parâmetros de interação fluido-rocha, como a permeabilidade.
+ A permeabilidade da amostra é medida em regime permanente, devido à facilidade
+ de medição e cálculos.
+ Todas as fases foram injetadas a vazões constantes até o equilíbrio ser
+ atingido e o diferencial de pressão medido.
+ A permeabilidade absoluta de cada fase foi calculada através da Lei de
+ Darcy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Engelke2012"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A Lei de Darcy indica que há direta relação entre a vazão e o gradiente
+ de pressão através de um meio poroso.
+ No 
+\shape italic
+core holder 
+\shape default
+são gerados diferentes fluxos 
+\shape italic
+q
+\shape default
+ (vazão de injeção), medindo-se ∆P (diferencial de pressão).
+ Primeiramente, procura-se determinar a permeabilidade absoluta da rocha
+ com a saturação da mesma em solução salina.
+ Então, iniciou-se a injeção, medindo o diferencial de pressão para diferentes
+ vazões após o fluxo atingir o regime permanente, quando o diferencial de
+ pressão estabilizou.
+ A partir desses dados, foi construído um gráfico de vazão x pressão, em
+ que a inclinação da reta fornece os valores de permeabilidade a partir
+ das equações 3.5 e 3.6.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedimento de injeção de água como método de recuperação secundária
+\end_layout
+
+\begin_layout Standard
+Após a saturação do 
+\shape italic
+plug 
+\shape default
+com óleo, foi injetada novamente a solução salina até não se observar mais
+ óleo no efluente produzido, obtendo-se a saturação de óleo residual (S
+\begin_inset Formula $_{or}$
+\end_inset
+
+).
+ Foi determinado também o volume de óleo recuperado pela injeção salina
+ (V
+\begin_inset Formula $_{ors}$
+\end_inset
+
+), que permitiu calcular a saturação de óleo recuperado pela injeção de
+ solução salina (S
+\begin_inset Formula $_{ors}$
+\end_inset
+
+) para determinar o percentual de recuperação secundária, também conhecida
+ como, convencional.
+ 
+\end_layout
+
+\begin_layout Standard
+A saturação residual de óleo (S
+\begin_inset Formula $_{or}$
+\end_inset
+
+), dada pelo volume (V
+\begin_inset Formula $_{or}$
+\end_inset
+
+) foi calculada como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{or(\%)}=\frac{V_{or}}{V_{p}}=(\frac{OOIP-V_{ors}}{V_{p}})x100\label{eq:qeq20-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A saturação de óleo recuperado pela solução salina é dado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{ors(\%)}=S_{oi}-S_{or}=\frac{V_{ors}}{V_{p}}x100\label{eq:eq21-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dessa forma, calcula-se a saturação de óleo residual (S
+\begin_inset Formula $_{or}$
+\end_inset
+
+) como sendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{or(\%)}=S_{oi}-S_{or}=(\frac{OOIP-V_{ois}}{V_{p}})x100\label{eq:eq22-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo o volume de óleo residual após a injeção salina (V
+\begin_inset Formula $_{or}$
+\end_inset
+
+) dado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{or}=OOIP-V_{ors}\label{eq:eq23-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Procedimento de Injeção de Biossurfactante como método de recuperação avançada
+\end_layout
+
+\begin_layout Standard
+O método de injeção de biossurfactante foi avaliado nesta etapa do teste.
+ Um volume definido da formulação do biossurfactante foi injetado na amostra
+ seguido por um volume definido da solução salina, na qual desloca o biossurfact
+ante formando uma frente de avanço 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sanabria2013"
+literal "false"
+
+\end_inset
+
+.
+ O procedimento inclui os passos: (1) Abertura da linha de formulação de
+ biossurfactante para permitir a entrada do mesmo no core holder; (2) Injeção
+ de volume definido de biosurfactante na amostra; (3) Abertura da linha
+ de solução salina simultaneamente ao fechamento da válvula da linha de
+ formulação de biossurfactante para permitir a entrada da solução no core
+ holder; (4) Injeção de volume definido de solução salina no plug.
+ Foram realizadas duas injeções alternadas de biossurfactante e solução
+ salina.
+ 
+\end_layout
+
+\begin_layout Standard
+O fator de recuperação para a injeção de biossurfactante pode ser calculado
+ a partir dos resultados desta etapa, assim como é possível fazer uma análise
+ comparativa entre as respostas obtidas para a recuperação com injeção convencio
+nal de solução salina.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Determinação do Fator de Recuperação e avaliação dos ganhos obtidos no experimen
+to de recuperação
+\end_layout
+
+\begin_layout Standard
+A eficiência na recuperação de óleo obtida pelos métodos de injeção de água
+ e injeção de biossurfactante foi quantificada através do fator de recuperação.
+ O fator de recuperação convencional (FRMC) foi obtido pela injeção da salmoura
+ (solução salina) no plug, obtendo-se a recuperação de certa quantidade
+ de óleo.
+ O FRMC foi quantificado de acordo com as equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eficiencia-recuperacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:efiiencia-recuperacao-volumes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR_{MC}=\frac{VolumedeóleoRecuperadoporInjeçãodeSoluçãoSalina}{VolumedeÓleoInicialnoTestemunho}\label{eq:eficiencia-recuperacao}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que pode ser escrito em função dos volumes obtidos experimentalmente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR_{MC}=\frac{V_{ors}}{OOIP}\label{eq:efiiencia-recuperacao-volumes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O método especial de recuperação utilizado teve o objetivo de recuperar
+ uma fração do óleo residual por injeção da solução de biossurfactante.
+ O fator de recuperação (FR
+\begin_inset Formula $_{ME}$
+\end_inset
+
+) neste caso foi obtido segundo as equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eq26-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eq27-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR_{ME}=\frac{VolumedeóleoRecuperadoporInjeçãodeBiossurfactante}{VolumedeÓleoInicialnoTestemunho}\label{eq:eq26-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR_{MC}=\frac{V_{orb}}{OOIP}\label{eq:eq27-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O Fator de Recuperação Geral pode ser obtido através da fórmula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fator-recuperacao-total"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+FR_{G}=\frac{VolumeTotaldeóleoRecuperado}{VolumedeÓleoInicialnoTestemunho}\label{eq:fator-recuperacao-total}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes - assuntos
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagrama de pacotes - assuntos
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:3.3 Diagrama-de-pacotes-assuntos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com base na análise de domínio do software desenvolvido, foram identificados
+ os seguintes pacotes:
+\end_layout
+
+\begin_layout Itemize
+Meio poroso: é um pacote que possui os dados das propriedades da rocha e
+ do fluido de saturação, que compõem o meio poroso.
+ Sua função é fornecer estas propriedades para o modelo de recuperação;
+\end_layout
+
+\begin_layout Itemize
+Permeabilidade absoluta: é um pacote que envolve todos os conceitos físicos
+ que ocorrem no fluxo de fluido no meio poroso, onde a equação de Darcy,
+ modela o fenômeno de transferência de fluido no meio poroso;
+\end_layout
+
+\begin_layout Itemize
+Métodos matemáticos: é um pacote que reúne as funções matemáticas para cálculo
+ das propriedades do meio poroso (porosidade, volume poroso, saturações,
+ entre outros) e fatores de recueração de óleo à partir da entrada de dados
+ dos testes como, por exemplo, volume de água inicial (Vwi), volume de água
+ produzida (Vwf), volume de óleo produzido na recuperação secundária (Vof1)
+ e volume de óleo produzido na recuperação avançada (Vof2);
+\end_layout
+
+\begin_layout Itemize
+Gráficos: é um pacote que utiliza o gnuplot para plotar a permeabilidade
+ absoluta e volumes de óleo produzidos por minuto, à partir dos testes de
+ fluxo em meio poroso.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama de Pacotes – Assuntos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra o diagrama de pacotes para o software desenvolvido:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura6.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes – Assuntos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama de Pacotes – Assuntos"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

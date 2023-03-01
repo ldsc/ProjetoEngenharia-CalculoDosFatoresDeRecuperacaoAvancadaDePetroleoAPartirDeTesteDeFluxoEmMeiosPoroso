@@ -1,0 +1,396 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass abnt
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+
+
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Documentação
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Documentação}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo projeto de engenharia precisa ser bem documentado.
+ Neste sentido, apresenta-se neste capítulo a documentação de uso do software
+ criado.
+ Esta documentação tem o formato de uma apostila que explica passo a passo
+ como usar o software.
+\end_layout
+
+\begin_layout Section
+Documentação do usuário
+\end_layout
+
+\begin_layout Standard
+Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
+ a forma de instalação e uso do software desenvolvido.
+\end_layout
+
+\begin_layout Subsection
+Como instalar o software
+\end_layout
+
+\begin_layout Standard
+Abra o terminal, vá para o diretório onde está o projeto, compile o programa
+ e, depois o execute.
+ Logo após, siga os seguintes passos:
+\end_layout
+
+\begin_layout Enumerate
+Entre com os seguintes dados:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Três medidas de diâmetro medidas com o auxílio de um paquímetro em laboratório;
+\end_layout
+
+\begin_layout Itemize
+Três medidas de comprimento medidas com o auxílio de um paquímetro em laboratóri
+o;
+\end_layout
+
+\begin_layout Itemize
+Peso da amostra saturada (molhada) medido com o auxílio de uma balança de
+ precisão em laboratório;
+\end_layout
+
+\begin_layout Itemize
+Peso da amostra seca medido com o auxílio de uma balança de precisão em
+ laboratório.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Após isso serão mostrados no console os resultados das propriedades do meio
+ poroso;
+\end_layout
+
+\begin_layout Enumerate
+Entre com os seguintes dados:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vazão de injeção adotado para o teste de recuperação;
+\end_layout
+
+\begin_layout Itemize
+Viscosidade do fluido que medirá a permeabilidade absoluta;
+\end_layout
+
+\begin_layout Itemize
+Três medidas de vazão utilizadas no teste para análise da permeabilidade;
+\end_layout
+
+\begin_layout Itemize
+Três pressões adquiridas conforme vazões adotadas no teste para análise
+ da permeabilidade.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Após isso serão mostrados no console o resultado da permeabilidade absoluta
+ da amostra e gráfico da reta da permeabilidade;
+\end_layout
+
+\begin_layout Enumerate
+Entre com os seguintes dados:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Nome do arquivo .txt contendo os dados medidos no laboratório para os testes
+ de recuperação – Volume recuperado por minuto 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Após isso serão mostrados no console as opções para visualização dos gráficos
+ com os volumes produzidos em cada etapa de recuperação.
+ O usuário poderá selecionar o gráfico para fazer suas análises;
+\end_layout
+
+\begin_layout Enumerate
+Entre com os seguintes dados após análise do volume produzido:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Volume inicial de água na amostra (igual volume poroso);
+\end_layout
+
+\begin_layout Itemize
+Volume de água produzida na recuperação secundária;
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido na recuperação secundária;
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido na recuperação avançada.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Após isso serão mostrados no console os fatores de recuperação da amostra.
+\end_layout
+
+\begin_layout Section
+Documentação para desenvolvedor
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção a documentação para o desenvolvedor, isto é, informaçõe
+s para usuários que queiram modificar, aperfeiçoar ou ampliar este software.
+\end_layout
+
+\begin_layout Subsection
+Dependências
+\end_layout
+
+\begin_layout Standard
+Para compilar o software é necessário atender as seguintes dependências:
+\end_layout
+
+\begin_layout Itemize
+No sistema operacional Windows:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar o compilador apropriado;
+\end_layout
+
+\begin_layout Itemize
+Recomenda-se o Microsoft Visual Studio 2019.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No sistema operacional GNU/Linux:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instalar o compilador g++ da GNU disponível em http://gcc.gnu.org.
+\end_layout
+
+\begin_layout Itemize
+Para instalar no GNU/Linux use o comando yum install gcc.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O software gnuplot, disponível no endereço http://www.gnuplot.info/, deve
+ estar instalado.
+\end_layout
+
+\begin_layout Itemize
+É possível que haja necessidade de setar o caminho para execução do gnuplot.
+\end_layout
+
+\begin_layout Itemize
+Biblioteca CGnuplot; os arquivos para acesso a biblioteca CGnuplot devem
+ estar no diretório com os códigos do software.
+ 
+\end_layout
+
+\begin_layout Subsection
+Como gerar a documentação usando doxygen
+\end_layout
+
+\begin_layout Standard
+A documentação do código do software deve ser feita usando o padrão JAVADOC,
+ do livro texto da disciplina.
+ Depois de documentar o código, use o software doxygen para gerar a documentação
+ do desenvolvedor no formato html.
+ O software doxygen lê os arquivos com os códigos (*.h e *.cpp) e gera uma
+ documentação muito útil e de fácil navegação no formato html (documentação
+ em anexo neste documento).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/figura25.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação criada no Doxygen.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Documentação criada no Doxygen"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
